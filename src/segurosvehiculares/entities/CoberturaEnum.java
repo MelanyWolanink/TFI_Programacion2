@@ -8,7 +8,7 @@ package segurosvehiculares.entities;
 /**
  * Enum para el tipo de cobertura del seguro.
  */
-public enum TipoCobertura {
+public enum CoberturaEnum {
     RC,
     TERCEROS,
     TODO_RIESGO

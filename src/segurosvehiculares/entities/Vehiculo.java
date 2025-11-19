@@ -9,11 +9,11 @@ public class Vehiculo {
 
     private Long id;
     private Boolean eliminado;
-    private String dominio; // Corregido (antes 'patente')
+    private String dominio; 
     private String marca;
     private String modelo;
     private Integer anio;
-    private String nroChasis; // Añadido
+    private String nroChasis;
     
     // Relación 1→1 unidireccional
     private SeguroVehicular seguro; 
@@ -22,7 +22,7 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
-    // Constructor completo (Corregido)
+    // Constructor completo 
     public Vehiculo(Long id, Boolean eliminado, String dominio, String marca, String modelo, Integer anio, String nroChasis, SeguroVehicular seguro) {
         this.id = id;
         this.eliminado = eliminado;
@@ -34,7 +34,7 @@ public class Vehiculo {
         this.seguro = seguro;
     }
 
-    // Getters y setters (Actualizados)
+    // Getters y setters 
     public Long getId() {
         return id;
     }

@@ -11,19 +11,18 @@ public class SeguroVehicular {
 
     private Long id;
     private Boolean eliminado;
-    private String aseguradora;     // Corregido (basado en UML)
-    private String nroPoliza;         // Corregido (basado en UML)
-    private TipoCobertura cobertura;  // Corregido (usa el Enum TipoCobertura.java)
-    private LocalDate vencimiento;      // Corregido (basado en UML)
+    private String aseguradora;   
+    private String nroPoliza;      
+    private CoberturaEnum cobertura;  
+    private LocalDate vencimiento;   
     
-    // (No hay referencia a Vehiculo, es unidireccional)
 
     // Constructor vacío
     public SeguroVehicular() {
     }
 
-    // Constructor completo (Corregido)
-    public SeguroVehicular(Long id, Boolean eliminado, String aseguradora, String nroPoliza, TipoCobertura cobertura, LocalDate vencimiento) {
+    // Constructor completo 
+    public SeguroVehicular(Long id, Boolean eliminado, String aseguradora, String nroPoliza, CoberturaEnum cobertura, LocalDate vencimiento) {
         this.id = id;
         this.eliminado = eliminado;
         this.aseguradora = aseguradora;
@@ -32,7 +31,7 @@ public class SeguroVehicular {
         this.vencimiento = vencimiento;
     }
 
-    // Getters y setters (Actualizados)
+    // Getters y setters 
     public Long getId() {
         return id;
     }
@@ -65,11 +64,11 @@ public class SeguroVehicular {
         this.nroPoliza = nroPoliza;
     }
 
-    public TipoCobertura getCobertura() {
+    public CoberturaEnum getCobertura() {
         return cobertura;
     }
 
-    public void setCobertura(TipoCobertura cobertura) {
+    public void setCobertura(CoberturaEnum cobertura) {
         this.cobertura = cobertura;
     }
 

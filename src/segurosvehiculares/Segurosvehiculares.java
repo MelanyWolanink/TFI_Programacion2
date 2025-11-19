@@ -5,10 +5,6 @@
  */
 package segurosvehiculares;
 
-/**
- *
- * @author Martin
- */
 public class Segurosvehiculares {
 
     /**

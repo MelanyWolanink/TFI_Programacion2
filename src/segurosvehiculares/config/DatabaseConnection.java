@@ -39,7 +39,7 @@ public class DatabaseConnection {
     }
 
     /**
-     * Retorna una conexión a la base de datos[cite: 62].
+     * Retorna una conexión a la base de datos
      * Quien llama a este método es responsable de cerrar la conexión.
      */
     public static Connection getConnection() throws SQLException {
